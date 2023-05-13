@@ -1,0 +1,289 @@
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-v30-latin-500.woff') format('woff');
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-v30-latin-700.woff') format('woff');
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    background-color: #CFDDE8;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-header__wraooer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 17px 24px 24px;
+    background: #6A96D8;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.site-header__text {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    font-variant: all-small-caps;
+    color: #FFFFFF;
+}
+
+.site-header__text::before {
+    margin-right: 10px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    content: "";
+
+}
+
+.site-header__not-btn {
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/not.svg");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    background-color: transparent;
+
+}
+
+.site-section__wrapper {
+    display: block;
+    padding: 0 24px;
+    background-color: #fff;
+    border-radius: 0px 0px 14px 14px;
+}
+
+.site-section__day-box {
+    display: block;
+}
+
+.site-section__day {
+    padding-top: 24px;
+    position: relative;
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.025em;
+    font-variant: all-small-caps;
+    color: #DDDDDD;
+}
+
+.site-section__day::before {
+    position: absolute;
+    z-index: 1;
+    background-image: url(../images/line.svg);
+    width: 145px;
+    height: 1px;
+    background-repeat: no-repeat;
+    content: "";
+    top: calc(50%);
+    left: calc(50% - 180px);
+}
+
+.site-section__day::after {
+    position: absolute;
+    z-index: 1;
+    background-image: url(../images/line.svg);
+    width: 145px;
+    height: 1px;
+    background-repeat: no-repeat;
+    content: "";
+    top: calc(50%);
+    left: calc(50% + 40px);
+}
+
+.site-section__chat-box {
+    display: block;
+    margin-bottom: 16px;
+    max-width: 257.5px;
+    min-width: 10px;
+    width: 100%;
+    border: 7px solid transparent;
+    border-left: 7px solid #fff;
+    border-right: 7px solid transparent;
+    border-bottom: none;
+    background: #E6EDF6;
+    padding: 9px 0px 11px 6px;
+   
+}
+.site-section__chat-box-first{
+    animation: matrix 1s 1 alternate;
+}
+@keyframes matrix {
+    0%{
+       display: none;
+        transform: scale(0);
+    }
+  
+    100%{
+        display: block;
+        transform:scale(1);
+    }
+    
+}
+
+.site-section__time {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #DDDDDD;
+}
+
+.site-section__chat {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* or 129% */
+    letter-spacing: -0.03em;
+    color: #000000;
+}
+
+.site-section__time--day-one {
+    display: block;
+    text-align: end;
+}
+
+.site-section__chat-box--box-twoo {
+    margin-left: auto;
+    border-left: transparent;
+    border-right: 7px solid #FFFFFF;
+}
+
+.site-section__chat-box--three {
+    width: 89px;
+
+}
+
+.site-section__chat-box--block {
+    width: 193px;
+    border: none;
+    /* margin-bottom: 30px; */
+    margin-left: auto;
+    background: #FFC2C1;
+    border-radius: 1px;
+   animation: not 0.9s 10 alternate-reverse;
+
+}
+@keyframes not{
+        from {
+            transform: scale(0.9 );
+        }
+        to{
+            transform: scale(1);
+            background-color: red;
+        }
+    
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 4px 4px 20px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 54px;
+}
+
+textarea {
+    width: 200px;
+    resize: none;
+    outline: none;
+    border: none;
+    border: 2px solid transparent;
+}
+
+textarea::placeholder {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    color: #BDBDBD;
+}
+
+.site-section__bnt {
+    padding: 9px 26px;
+    background: #6A96D8;
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    text-align: center;
+    font-variant: all-small-caps;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    animation: scale 2s 1 4s  alternate-reverse  ;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.site-section__bottom {
+    padding-bottom: 30px;
+}
